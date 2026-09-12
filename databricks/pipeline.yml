@@ -1,0 +1,14 @@
+name: fashion_mnist
+# Only used by the open-source `spark-pipelines` CLI; must be an absolute URI.
+# Databricks pipelines take their storage/catalog settings from pipeline settings.
+storage: file:///tmp/fashion_mnist_pipeline_storage
+# catalog: main
+# schema: default
+configuration:
+  # Source table written by ingest_raw_fashion_mnist.py.
+  fashion.raw_table: main.default.fashion_mnist_raw
+  # MLlib model directory written by train_mlp_model.py.
+  fashion.model_path: /Volumes/main/default/models/fashion_mnist_mlp
+libraries:
+  - glob:
+      include: transformations/**

@@ -1,6 +1,6 @@
 tensorflow-cpu==2.21.0
 matplotlib==3.10.9
 notebook==7.6.2
-pyspark==4.2.0
+pyspark[connect]==4.2.0
 pandas==2.3.3
 pyarrow==25.0.1
