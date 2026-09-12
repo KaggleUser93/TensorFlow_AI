@@ -20,3 +20,8 @@ jupyter notebook TF_Proj2_ZalandoFashion.ipynb
 
 It trains on CPU in a couple of minutes and reaches roughly 88% test accuracy.
 Keras downloads the Fashion-MNIST dataset automatically on first run.
+
+`TF_Proj2_ZalandoFashion_PySpark.ipynb` is the same model ported to Spark MLlib's
+`MultilayerPerceptronClassifier`. It needs a JVM (Java 17 works), trains in about
+five minutes locally, and reaches roughly 87% test accuracy. TensorFlow is used
+there only to download the dataset.
